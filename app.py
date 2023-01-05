@@ -1,11 +1,11 @@
-import streamlit as st
-import plotly.express as px
 import pandas as pd
-
+import plotly.express as px
+import streamlit as st
+import base64
 
 st.image("logos/LBP.jpg", width=900)
 
-with open("part1.md") as file:
+with open("text/part1.md") as file:
     text = file.read()
 
 st.markdown(text)
@@ -20,7 +20,7 @@ st.image("logos/concurrents_directs.png", width=900)
 
 # FIN PARTIE 1
 
-with open("part2.md") as file:
+with open("text/part2.md") as file:
     text = file.read()
 
 st.markdown(text)
@@ -39,7 +39,7 @@ with col3:
 
 # FIN PARTIE 2
 
-with open("part3.md") as file:
+with open("text/part3.md") as file:
     text = file.read()
 
 st.markdown(text)
@@ -59,7 +59,7 @@ with col3:
 
 # FIN PARTIE 3
 
-with open("part4.md") as file:
+with open("text/part4.md") as file:
     text = file.read()
 
 st.markdown(text)
@@ -130,8 +130,8 @@ fig1 = px.scatter_3d(
     size_max=18,
     color="label",
     color_discrete_map={"La Banque Postale": "blue"},
-    opacity=0.5,
-    template="presentation",
+    opacity=0.7,
+    template="seaborn",
     height=900,
 )
 
@@ -145,10 +145,47 @@ fig2 = px.scatter_3d(
     size_max=18,
     color="label",
     color_discrete_map={"La Banque Postale": "blue"},
-    opacity=0.5,
-    template="presentation",
+    opacity=0.7,
+    template="seaborn",
     height=900,
 )
 
 st.plotly_chart(fig1)
 st.plotly_chart(fig2)
+
+
+# FIN PARTIE 4
+
+with open("text/part5.md") as file:
+    text = file.read()
+
+st.markdown(text)
+
+st.image("logos/bnp.png", width=700)
+
+
+# FIN PARTIE 5
+
+with open("text/part6.md") as file:
+    text = file.read()
+
+st.markdown(text)
+
+st.image("logos/porter.png", width=700)
+
+
+# FIN PARTIE 6
+
+with open("text/part7.md") as file:
+    text = file.read()
+
+st.markdown(text)
+
+st.image("logos/clients.png", width=700)
+
+# FIN PARTIE 7
+
+with open("text/part8.md") as file:
+    text = file.read()
+
+st.markdown(text)
