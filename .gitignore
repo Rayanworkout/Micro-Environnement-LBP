@@ -6,3 +6,4 @@ forces_de_porter.py
 leader marché.png
 logos/
 .venv/
+__pycache__/
