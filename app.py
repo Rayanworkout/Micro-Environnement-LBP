@@ -1,13 +1,23 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+from PIL import Image
 
+favicon = Image.open("logos/favicon.png")
 
-# QUANTIFICATION DE LA CIBLE (POTENTIEL DE MARCHÉ, NOMBRE DE GENS EN CLASSE MOYENNE PAR EXEMPLE)
-# CRÉER UN PERSONA
+st.set_page_config(
+    layout="wide", page_icon=favicon, page_title="Micro Environnement LBP"
+)
 
-st.set_page_config(layout="wide", initial_sidebar_state="expanded", page_icon="🧊")
+hide_default_format = """
+       <style>
+       #MainMenu {visibility: hidden; }
+       footer {visibility: hidden;}
+       </style>
+       """
+st.markdown(hide_default_format, unsafe_allow_html=True)
 
+st.markdown('**<div style="text-align: right"> Rayan MGP4 </div>**', unsafe_allow_html=True)
 
 st.image("logos/siege_lbp.jpg", width=900)
 
@@ -15,11 +25,6 @@ with open("text/part1.md") as file:
     text = file.read()
 
 st.markdown(text, unsafe_allow_html=True)
-
-
-# st.sidebar.title("À l'attention de Moracchioli Franck")
-# st.sidebar.write("de Mokrane Rayan")
-# st.sidebar.write("Code Source https://github.com/Rayanworkout/Micro-Environnement-LBP")
 
 
 st.image("logos/concurrents_directs.png", width=900)
@@ -185,3 +190,6 @@ with open("text/part8.md") as file:
     text = file.read()
 
 st.markdown(text, unsafe_allow_html=True)
+
+
+st.markdown('*<div style="text-align: right">Code Source https://github.com/Rayanworkout/Micro-Environnement-LBP</div>*', unsafe_allow_html=True)
