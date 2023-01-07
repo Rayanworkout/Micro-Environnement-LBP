@@ -3,4 +3,4 @@
 
 ### ~ *Concurrents Indirects*
 
-#### Il est plus délicat de déterminer les concurrents indirects dans le secteur bancaire. La notion peut avoir une sémantique différente et se révéler équivoque. Dans cette analyse, je considère que les entreprise dont les services bancaires et d’assurance ne sont pas le coeur de métier sont des concurrents indirects. Je pense par exemple aux plateformes de crowdfunding ou aux concessionnaires qui proposent des services de financement ou d’assurance. Tous deux sont des concurrents à considérer dans une certaine mesure.
+##### Il est plus délicat de déterminer les concurrents indirects dans le secteur bancaire. Il est même possible qu'aucun n'existe à ce jour.
